@@ -17,7 +17,7 @@ export default function AppRoutes() {
                 <Route path="/" element={<Home />} />
                 <Route path="/oauth" element={<OAuthCallback />} />
                 <Route path="/dashboard" element={<ProtectedRoute><Dshboard /></ProtectedRoute>} />
-                <Route path="/register" element={<ProtectedRoute><SignupForm /></ProtectedRoute>} />
+                <Route path="/register" element={<SignupForm />} />
                 <Route path="/login" element={<LoginForm />} />
                 <Route path="/transactions" element={<ProtectedRoute><TransactionPage /></ProtectedRoute>} />
                 <Route path="/users" element={<ProtectedRoute><UserPage /></ProtectedRoute>} />
@@ -26,3 +26,4 @@ export default function AppRoutes() {
         </Router>
     );
 }
+
